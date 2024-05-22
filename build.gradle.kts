@@ -21,7 +21,7 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
 
-    implementation("com.open200:xesar-connect:0.11.0")
+    implementation("com.open200:xesar-connect:1.0.0")
     implementation("org.bouncycastle:bcprov-jdk18on:1.78")
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
