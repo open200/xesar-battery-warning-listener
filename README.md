@@ -61,6 +61,9 @@ export XESARCONNECT_CREDENTIALSZIPPATH=/path/to/your/credentials.zip
 ./gradlew bootRun
 ```
 
+## Documentation
+
+For more information about this application, please refer to the blog post (german) [Schritt für Schritt: Xesar Event Listener mit Kotlin und Spring Boot](https://open200.com/de/blog/schritt-fuer-schritt-xesar-event-listener-mit-kotlin-und-spring-boot/).
 
 ## License
 
