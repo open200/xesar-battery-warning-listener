@@ -5,7 +5,6 @@ import com.open200.xesar.connect.XesarConnect
 import com.open200.xesar.connect.filters.TopicFilter
 import com.open200.xesar.connect.messages.query.AccessProtocolEvent
 import com.open200.xesar.connect.messages.query.EventType
-import com.open200.xesar.connect.messages.query.GroupOfEvent
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
@@ -22,8 +21,7 @@ class BatteryEmptyListener(
     private val log = LoggerFactory.getLogger(LoggingListener::class.java)
     private val scope = CoroutineScope(Job() + Dispatchers.IO)
     private val batteryEmpty =
-        Topics.Event.accessProtocolEventTopic(
-            GroupOfEvent.MaintenanceComponent, EventType.BATTERY_EMPTY)
+        Topics.Event.accessProtocolEventTopic(EventType.BATTERY_EMPTY)
 
     @EventListener(ApplicationReadyEvent::class)
     suspend fun listenOnBatteryEmpty() {
