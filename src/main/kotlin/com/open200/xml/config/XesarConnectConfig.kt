@@ -19,7 +19,7 @@ class XesarConnectConfig {
 
     @Bean
     fun config(@Value("\${xesarconnect.credentials-zip-path}") zipPath: Path): Config {
-        return Config.configureFromZip(configurationZipFile = zipPath, logoutOnClose = false)
+        return Config.configureFromZip(configurationZipFile = zipPath).copy(logoutOnClose = false)
     }
 
     @Bean
